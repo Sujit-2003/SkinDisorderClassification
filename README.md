@@ -1,55 +1,93 @@
-# SkinDisorderClassification
-Project Overview
-This project focuses on predicting various classes of skin diseases using machine learning techniques. The aim is to assist doctors in early identification of erythemato-squamous diseases, such as psoriasis, seborrheic dermatitis, lichen planus, pityriasis rosea, chronic dermatitis, and pityriasis rubra pilaris. These diseases share many clinical and histopathological features, making diagnosis challenging.
+ Skin Disorder Prediction (PRCP-1027-Skin-Disorder)
+📌 Project Overview
 
-Dataset Description
-The dataset contains 34 attributes: 33 linear-valued features and 1 nominal feature.
+This project aims to predict types of erythemato-squamous skin diseases using machine learning.
+These diseases include:
 
-Clinical evaluation consists of 12 features; histopathological evaluation consists of 22 features assessed from skin samples under a microscope.
+Psoriasis
 
-Features record severity on a scale from 0 (not present) to 3 (maximum presence).
+Seborrheic Dermatitis
 
-Important attributes include erythema, scaling, itching, koebner phenomenon, family history, age, and various histopathological markers.
+Lichen Planus
 
-Patient identifiers were removed to protect privacy.​
+Pityriasis Rosea
 
-Project Structure
-skin-disoder-pred.ipynb: Full Jupyter notebook containing data analysis, feature engineering, machine learning model creation, evaluation, and comparisons.
+Chronic Dermatitis
 
-PRCP-1027-Skin-Disorder.docx: Project problem statement and dataset description.
+Pityriasis Rubra Pilaris
 
-Dataset file(s) (external, usually provided as CSVs during model training).
-Install dependencies with:
+These skin disorders are difficult to diagnose because they share many clinical and histopathological features. The model helps doctors make faster and more accurate decisions.
+
+📊 Dataset Description
+
+Total attributes: 34
+
+33 numerical (linear-valued)
+
+1 nominal feature
+
+12 clinical features (erythema, scaling, itching, etc.)
+
+22 histopathological features observed from skin biopsy
+
+Each feature is rated on 0–3 severity scale
+
+All patient identifiers were removed to maintain privacy
+
+📁 Project Structure
+.
+├── skin-disorder-pred.ipynb          # Jupyter Notebook: EDA + ML Modeling
+├── PRCP-1027-Skin-Disorder.docx      # Project problem statement
+└── data/ (dataset files - not included)
+
+🛠️ Dependencies
+
+Install required libraries:
+
 pip install pandas numpy matplotlib seaborn scikit-learn
-Usage Instructions
-Place the dataset files in the working directory.
 
-Open the skin-disoder-pred.ipynb notebook in Jupyter or any compatible environment.
+🚀 How to Run the Project
 
-Run the notebook sequentially to perform:
+Place the dataset CSV files in the project folder.
 
-Data loading and exploratory analysis.
+Open skin-disorder-pred.ipynb in Jupyter Notebook.
 
-Feature engineering and preprocessing.
+Run all cells to perform:
 
-Training and evaluation of multiple classification models.
+Data loading & EDA
 
-Review model performance reports and diagnostic visualizations for insights.
+Feature preprocessing
 
-Main Tasks
-Conduct exploratory data analysis to understand clinical and histopathological features.
+Model training
 
-Build predictive models to classify skin diseases based on attributes.
+Model comparison
 
-Compare multiple machine learning models to identify the best performer.
+View reports, graphs, and model evaluation results.
 
-Develop recommendations to aid quicker and more accurate diagnosis by doctors.
-Notes
-Classification task involves diseases with overlapping symptoms and biopsy challenges.
+📌 Main Tasks Performed
 
-The notebook contains detailed comments for reproducibility and educational purposes.
+Detailed Exploratory Data Analysis
 
-For further information, consult the attached project documentation.
+Understanding correlations among clinical & histopathology features
 
-License
+Encoding & preprocessing
+
+Training various ML models
+
+Evaluating accuracy, confusion matrix, and classification metrics
+
+Identifying the best-performing classifier
+
+Providing insights for improving diagnosis accuracy
+
+📝 Notes
+
+This is a classification problem involving diseases with overlapping symptoms.
+
+EDA and model interpretation help improve medical decision support.
+
+The notebook contains step-by-step explanations for learning and reproducibility.
+
+📜 License
+
 This project is intended for academic and research purposes related to skin disorder prediction.
